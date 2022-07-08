@@ -1,0 +1,45 @@
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<!-- Bài 6 : Tìm Hiểu : cả 2 dạng này là dataBinding : Thay đổi hiển thị
+        Class Binding   
+        Style Binding 
+
+
+  <p class = "foo" style = "color: red "> 
+      Hello! Bài tập Angular_bai6
+</p>
+--> 
+<button (click) = "isDanger = !isDanger"> Toggle Danger</button>
+<br>
+<button (click) = "isWarning = !isWarning "> Toggle warning</button>
+<!--
+
+ Dùng array: <div class = "box" [class] = "['red-border','yellow-background']"></div>
+ Dùng Object: <div class = "box" [class] = "{'red-border': isDanger, 'yellow-background': isWarning}"></div>
+ Dùng classes: <div [class] = "classes" ></div>
+ - [class.ten-class]
+ - [class] = "array"
+ - [class] = "object" {[ten-class: string : boolean]}
+ - [class] = "variable"
+
+-->
+<div class = "box" [class.red-border] = "isDanger" [class.yellow-background] = "isWarning"></div>
+<br> <br> <br>
+<!--
+  - [style.tenStyle]
+  - [style.ten-style]
+  - [style.tenStyle.unitl]
+
+-->
+<p [style.color] = "'red'" [style.backgroundColor] = "'yellow'" [style.fontSize.px] = "20">
+ Hôm nay làm về ví dụ 6 - Angular - Class Binding và Style Binding
+</p>
+<br> <br>
+<p [style] = "{color: 'yellow', backgroundColor: 'red', fontSize: '2rem' }" >
+  Xin chào Mọi người ! 
+</p>
+<p style="color:red " >
+ Tôi tên là : Lê Huỳnh Đức. Thực tập tại VNPT IT3 
+</p>

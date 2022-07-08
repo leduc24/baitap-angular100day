@@ -1,0 +1,44 @@
+
+// ngFor Directive
+<hello name="{{ name }}"></hello>
+ 
+<!--
+  for (let st of users ){
+
+  }
+  - $implicit: item Implicit context Variable 
+  - index: so thu tu cua item hien tai 
+  - count: do dai` cua arry
+  - first: ture nếu là item đầu tiên
+  - last: ture nếu là item cuối cùng 
+  - even: ture nếu item là vị trí chẵn
+  - odd : ture nếu item là vị trí lẽ 
+-->
+
+<ul>
+  <li *ngFor ="let u of users; index as idx; count as total; first as isFirst; 
+        last as isLast; even as isEven; odd as isOdd">
+    
+    <span>{{u.name}} -- {{u.id}}  -- {{u.phone}}</span>
+    <br><br>
+    <span> as index {{idx}} out of {{total}}</span>
+    <br>
+    <span *ngIf = "isEven"> i am even number  </span>
+    <br>
+    <span *ngIf = "isOdd"> i am Odd number  </span>
+    <br>
+    <span *ngIf = "isFirst" > i am First </span>
+    <br>
+    <span *ngIf = "isLast"> i am Last</span>
+    <br>
+    </li>
+</ul>
+
+ <!--<button *ngFor = "let tag of tags; last as isLast"[class.right-margin]= "!isLast">{{tag}}</button>
+
+
+  <ng-template ngFor [ngForOf] = "user" let-u let-inx = "index" let-total = "count" let-isFirst = "first"
+  let-isLast = "last" let-isEven = "even" last-isOdd = "odd">
+
+</ng-template>
+-->

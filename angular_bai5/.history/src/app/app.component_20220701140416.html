@@ -1,0 +1,24 @@
+
+// ngFor Directive
+<hello name="{{ name }}"></hello>
+ 
+<!--
+  for (let st of users ){
+
+  }
+  - $implicit: item Implicit context Variable 
+  - index: so thu tu cua item hien tai 
+  - count: do dai` cua arry
+  - first: ture nếu là item đầu tiên
+  - last: ture nếu là item cuối cùng 
+  - even: ture nếu item là vị trí chẵn
+  - odd : ture nếu item là vị trí lẽ 
+-->
+
+<ul>
+  <li *ngFor ="let u of users; index as total; first as isFirst; last as isLast; even as isEven; odd as isOdd">
+    
+    <span>{{u.name}} - {{u.id}} - {{u.phone}}</span>
+    
+    </li>
+</ul>
