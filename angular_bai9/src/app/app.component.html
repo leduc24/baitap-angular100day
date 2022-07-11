@@ -1,0 +1,15 @@
+<p
+  [style.color]="'blue'"
+  [style.background]="'yellow'"
+  [style.fontSize.px]="25"
+>
+  DaNang Thang 7 Nam 2022
+</p>
+<p style="color: Red">ANGULAR BAI 9</p>
+<p>Your name: {{ name }}</p>
+<input type="text" [(ngModel)]="name" />
+<br />
+<p>Age:</p>
+<input type="text" [ngModel]="age" />
+<br /><br /><br />
+<app-toggle [(checked)]="checked"></app-toggle>

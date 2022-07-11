@@ -1,0 +1,14 @@
+import { Component, VERSION } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  name = 'Huynh Duc ';
+  checked = true;
+  age = 22
+  color = "Blue"
+  backgroundColor = "yellow"
+}

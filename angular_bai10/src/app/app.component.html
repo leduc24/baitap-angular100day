@@ -1,4 +1,20 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+
+<p style="color: red ">ANGULAR - BAI10</p>
+
+<br />
+
+<button (click)="toggleComp.toggle()">Toggle</button>
+<button (click) = "showLast = !showLast" > Toggle ShowLast</button>
+<br /><br />
+<button (click)="toggleInside()">Toggle Inside class</button>
+<br /><br />
+<app-toggle #toggleComp></app-toggle>
+<br />
+<app-toggle></app-toggle>
+
+<ng-container *ngIf = "showLast">
+  <app-toggle></app-toggle>
+</ng-container>
+
+
